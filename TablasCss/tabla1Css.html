@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Ejercio de tablas 1 (Tabla simple) </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+     table{
+       width:70%; 
+       border:black 1px solid
+     }
+     td,th{
+        padding:3px;
+        border:black 1px solid;
+     }
+     th[rowspan="2"], td=["colspan=2"]{
+     width:40%;
+     }
+ th,td.alignright{
+     text-align:right;
+    }
+  th,td.alignleft{
+     text-align:left;
+    }
+ 
+     </style>
+  </head>
+  <body>
+  <table>
+    <tr>
+      <th colspan="2">1.1 y 1.2</th>
+      <th class="alignleft">1.3</th>
+    </tr>
+    <tr>
+      <td rowspan="2" class="alignleft">2.1 y 3.1</td>
+      <td class="alignright">2.2</td>
+      <td class="alignright">2.3</td>
+    </tr>
+  
+    <tr>
+      <td class="alignleft">3.2</td>
+      <td class="alignleft">3.3</td>
+    </tr>
+  </table>
+  </body>
+</html>
