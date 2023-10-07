@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reporte de Toyota</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+      font-family:Arial,sans-serif;
+      margin:40px;
+    }
+    table{
+      border:blue 1px solid;
+      width:500px;
+      margin:0;
+      border-collapse:collapse; /*para unir los bordes de las celdas*/
+    }
+    th,td{
+      border:white 1px solid;
+      padding:8px 12px;
+    }
+   td.bg-grey{
+     background-color:grey;
+   }
+   td.bg-red{
+     background-color:red;
+   }
+   td.bg-light-blue {
+            background-color: #a0a0ff;
+        }
+
+  td.bg-light-red {
+            background-color: #ffa0a0;
+  }
+    .blue-header{
+    background-color:blue;
+    border:none;
+    height:12px;
+    }
+
+
+
+    </style>
+</head>
+
+<body>
+      <table>
+        <!-- Fila para simular el body superior más grueso -->
+        <tr>
+            <td class="blue-header" colspan="5"></td>
+        </tr>
+        <tr>
+            <th><img src="toyota2.png" alt="Logo de Toyota" width="60"></th>
+            <th>Abril</th>
+            <th>Mayo</th>
+            <th>Junio</th>
+            <th>Julio</th>
+        </tr>
+        <tr>
+            <td class="bg-grey">Vehiculos</td>
+            <td>22</td>
+            <td>23</td>
+            <td class="bg-light-red">3</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td class="bg-grey">Visitante</td>
+            <td>1,234</td>
+            <td>1,537</td>
+            <td class="bg-light-red">7</td>
+            <td>1,930</td>
+        </tr>
+        <tr>
+            <td class="bg-grey">Ingresos</td>
+            <td>11,000</td>
+            <td>13,000</td>
+            <td class="bg-red">-500</td>
+            <td class="bg-light-blue">60,930</td>
+        </tr>
+    </table>
+ </body>
+
+</html>
+
