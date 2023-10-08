@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Ventas Anuales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+    .resumen,.detalle {
+    font-family: Arial, sans-serif;
+    margin: 20px; /* Espacio alrededor del div */
+    }
+
+.resumen table  {
+    width:42%; /* Ancho de la tabla */
+    border:black 1px solid;
+}
+
+.resumen th {
+    background-color: #6699ff; /* Color de fondo de la celda de encabezado */
+    color: white; /* Color de texto de la celda de encabezado */
+    padding: 4px; /* Espacio interno de la celda de encabezado */
+    font-size: 18px; /* Tamaño de letra de la celda de encabezado */
+    border: 1px solid black; /* Borde de la celda de encabezado */
+}
+
+.resumen td {
+    background-color:#e7f3fe;
+    padding: 2px; /* Espacio interno de las celdas normales */
+    font-size: 16px; /* Tamaño de letra de las celdas normales */
+    border: 1px solid #000; /* Borde de las celdas normales */
+    text-align: center; /* Alineación del texto al centro */
+}
+.resumen tr:nth-child(2) td:nth-child(4){
+color:#93270e;
+        }
+ .detalle {
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    width: 55%;
+   }
+
+.detalle table {
+    border:black 1px solid;
+    width: 100%; 
+    height:100%;
+}
+
+.detalle th {
+    background-color: #6699ff; 
+    color: white; 
+    padding: 4px; 
+    font-size: 16px; 
+    border: 1px solid #000; 
+}
+
+.detalle td {
+    padding: 4px; 
+    font-size: 14px; 
+    border: 1px solid #000; 
+    text-align: center;
+}
+.detalle caption{
+background-color:black;
+color:white;
+font-weight:bold;
+}
+/* Estilizando las celdas con fondo amarillo según su posición 
+La fórmula -n+5 seleccionará los elementos hasta el quinto elemento. 
+Esto es porque si se toman los primeros cinco valores de n (0, 1, 2, 3, 4),
+y los sustituimos en la fórmula, obtenemos 5, 4, 3, 2, y 1, respectivamente. 
+Así que básicamente estamos seleccionando los elementos del primero al quinto.
+ Nota me di cuenta que cuenta desde el primer trow por tanto hasta el 7
+ */
+.detalle tr:nth-of-type(-n+7) td:nth-child(4),
+.detalle tr:nth-of-type(-n+7) td:nth-child(6),
+.detalle tr:nth-of-type(-n+7) td:nth-child(8),
+.detalle tr:nth-of-type(-n+7) td:nth-child(10),
+.detalle tr:nth-of-type(-n+7) td:nth-child(12) {
+    background-color: #fffe98;
+}
+.detalle tr td:last-child{
+background-color:black;
+color:white;
+        }
+.detalle tr:last-child{
+background-color:black;
+color:white;
+ 
+}
+
+    </style>
+</head>
+<body>
+    <center>
+<h1>***** Proyecto Ventas Anuales *****</h1>
+
+<div class="resumen">
+    Resumen General
+    <table>
+        <tr>
+            <th>TOTAL SUCURSALES</th>
+            <th>GANANCIAS AÑO 2020</th>
+            <th>GANACIAS AÑO 2021</th>
+            <th>DIFERENCIAS</th>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>$1,456,234,556.56</td>
+            <td>$1,246,704,344.12</td>
+            <td>-$209,530,212.44</td>
+        </tr>
+    </table>
+</div>
+
+<div class="detalle">
+    Detalle Anual
+     <table>
+         <caption>Periodo de Evaluación 2020-2021</caption>
+    <tr>
+        <th rowspan="2">No. Sucursal</th>
+        <th rowspan="2">Sucursal</th>
+        <th colspan="2">[Vol. Prod. 1]</th>
+        <th colspan="2">[Vol. Prod. 2]</th>
+        <th colspan="2">[Vol. Prod. 3]</th>
+        <th colspan="2">[Vol. Prod. 4]</th>
+        <th colspan="2">[Vol. Prod. 5]</th>
+        <th rowspan="2">[Total]</th>
+    </tr>
+    <tr>
+        <th>2020</th>
+        <th>2021</th>
+        <th>2020</th>
+        <th>2021</th>
+        <th>2020</th>
+        <th>2021</th>
+        <th>2020</th>
+        <th>2021</th>
+        <th>2020</th>
+        <th>2021</th>
+    </tr>
+    <tr>
+        <td>33442001</td>
+        <td>Sucursal 1</td>
+        <td>14</td>
+        <td>18 ↑</td>
+        <td>40</td>
+        <td>34 ↓</td>
+        <td>13</td>
+        <td>17 ↑</td>
+        <td>11</td>
+        <td>12 ↑</td>
+        <td>0</td>
+        <td>0 =</td>
+        <td>81</td>
+    </tr>
+    <tr>
+        <td>33442002</td>
+        <td>Sucursal 2</td>
+        <td>10</td>
+        <td>10 =</td>
+        <td>55</td>
+        <td>56 ↑</td>
+        <td>17</td>
+        <td>21 ↑</td>
+        <td>9</td>
+        <td>7 ↓</td>
+        <td>6</td>
+        <td>6 ↓</td>
+        <td>102</td>
+    </tr>
+    <tr>
+        <td>33442003</td>
+        <td>Sucursal 3</td>
+        <td>24</td>
+        <td>25 ↑</td>
+        <td>59</td>
+        <td>64 ↑</td>
+        <td>27</td>
+        <td>21 ↓</td>
+        <td>14</td>
+        <td>17 ↑</td>
+        <td>5</td>
+        <td>2 ↓</td>
+        <td>129</td>
+    </tr>
+    <tr>
+        <td>33442004</td>
+        <td>Sucursal 4</td>
+        <td>34</td>
+        <td>30 ↓</td>
+        <td>89</td>
+        <td>91 ↑</td>
+        <td>76</td>
+        <td>59 ↓</td>
+        <td>58</td>
+        <td>68 ↑</td>
+        <td>11</td>
+        <td>19 ↑</td>
+        <td>267</td>
+    </tr>
+    <tr>
+        <td>33442005</td>
+        <td>Sucursal 5</td>
+        <td>252</td>
+        <td>253 ↑</td>
+        <td>119</td>
+        <td>128 ↑</td>
+        <td>77</td>
+        <td>62 ↓</td>
+        <td>26</td>
+        <td>32 ↑</td>
+        <td>3</td>
+        <td>3 =</td>
+        <td>478</td>
+    </tr>
+  <tr>
+    <td colspan="2">Totales</td>
+    <td>334</td>
+    <td>336 ↑</td>
+    <td>362</td>
+    <td>373 ↑</td>
+    <td>210</td>
+    <td>124 ↓</td>
+    <td>122</td>
+    <td>138 ↑</td>
+    <td>26</td>
+    <td>30 ↑</td>
+    <td>1,057</td>
+</tr>
+     </table>
+     </div>
+    </center>
+</body>
+  
+</html>
