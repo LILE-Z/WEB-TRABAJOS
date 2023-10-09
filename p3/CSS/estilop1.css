@@ -1,0 +1,62 @@
+body{
+  text-align: center;
+}
+.medida_cm{
+  border:solid blue 2px;
+  margin:20px;
+  width: 5cm;
+  height: 5cm;
+}
+@media (max-width:1200px){
+  body{
+    background:lightsalmon;
+  }
+  .medida_cm{
+  border:solid blue 2px;
+  margin:20px;
+  width: 5cm;
+  height: 5cm;
+  background-color: red;
+  color:white;
+  }
+}
+@media (max-width:900px){
+  body{
+    background:lightgreen;
+  }
+  .medida_cm{
+  border:solid blue 2px;
+  margin:20px;
+  width: 4cm;
+  height: 4cm;
+  background-color: green;
+  color:white;
+  }
+}
+@media (max-width:800px){
+  body{
+    background:lightblue;
+  }
+  .medida_cm{
+  border:solid blue 2px;
+  margin:20px;
+  width: 3cm;
+  height: 3cm;
+  background-color: blue;
+  color:white;
+  }
+}
+@media (max-width:600px){
+  body{
+    background:lightgrey;
+  }
+  .medida_cm{
+  border:solid blue 2px;
+  margin:20px;
+  width: 3cm;
+  height: 3cm;
+  background-color: blue;
+  color:white;
+  display: none;
+  }
+}
