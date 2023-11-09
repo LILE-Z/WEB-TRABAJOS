@@ -2,11 +2,28 @@
 include("conexion.php");
 $link = conexion();
 
-$querry = "SELECT * FROM USUARIOS";
-$consulta = mysqli_query($link, $querry);
-$datos = mysqli_num_rows($consulta);
+$query = "SELECT * FROM usuarios";
+$consulta = mysqli_query($link, $query);
 
-while ($fila = mysqli_fetch_row($consulta)) {
-  printf("$fila[0]-$fila[1]- $fila[2]");
+if ($consulta) {
+    $datos = mysqli_num_rows($consulta);
+    
+    if ($datos > 0) {
+        while ($fila = mysqli_fetch_assoc($consulta)) {
+            // Asegúrate de escapar la salida si se va a mostrar en una página web
+            printf("%s - %s - %s\n", 
+		    htmlspecialchars($fila['ID']), 
+		    htmlspecialchars($fila['NOMBRE_COMPLETO']), 
+		    htmlspecialchars($fila['CORREO'])
+            );
+        }
+    } else {
+        echo "No hay usuarios para mostrar.";
+    }
+} else {
+    echo "Error en la consulta: " . mysqli_error($link);
 }
+
 mysqli_close($link);
+?>
+
