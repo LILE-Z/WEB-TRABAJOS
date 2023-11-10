@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script>
+      function mostrarAlerta(){
+      alert('Se hizo click sobre esta etiqueta');
+      }
+      function hacerclick(){
+      document.getElementsByTagName('p')[0].onclick=mostrarAlerta;
+      }
+      window.onload=hacerclick;
+
+    </script>
+  </head>
+  <body>
+  <h1>Ejemplos de JavaScript en codigo embebido</h1>
+   <hr>
+   <p onclick="mostrarAlerta()">Se hiso click sobre el texto</p>
+   <hr>
+   <p>Pasar el mouse en el texto</p>
+   <hr>
+   <button>Llamar a uha funcion</button>
+  </body>
+</html>
