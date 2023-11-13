@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 11</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #FFD700; /* Amarillo dorado como color base para contraste */
+        }
+
+        .container, .sidebar {
+            padding: 15px;
+        }
+
+        .sidebar {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+                color: #ADD8E6; /* Azul claro */
+            }
+
+            body {
+                background-color: lavender;
+                flex-direction: column;
+            }
+
+            .sidebar {
+                order: -1;
+            }
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 900px) {
+            header h1 {
+                font-size: 22px;
+                color: #90EE90; /* Verde claro */
+            }
+
+            body {
+                flex-direction: row;
+            }
+
+            .sidebar {
+                width: 150px;
+                order: 0;
+            }
+        }
+
+        @media only screen and (orientation: landscape) {
+            header h1 {
+                color: #FFB6C1; /* Rosado claro */
+            }
+
+            body {
+                background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Actividad 11</h1>
+    </header>
+    <div class="sidebar">
+        <p>Barra Lateral</p>
+    </div>
+    <div class="container">
+        <p><strong>Actividad 11 (Entregar).</strong></p>
+        <p>Investigar más a fondo el tema de las Media Queries y realizar una página con algunos elementos HTML, los cuales puedan ser transformados haciendo uso de más Media Queries.</p>
+        <p>Este es un ejemplo de cómo usar media queries en CSS para hacer un diseño web responsivo. Las media queries pueden usarse para cambiar colores, mostrar u ocultar elementos, modificar la disposición de la cuadrícula, y mucho más, dependiendo de las características del dispositivo.</p>
+    </div>
+    <footer>
+        <p>&copy; 2023 Ethan Zuñiga Neponuceno</p>
+    </footer>
+</body>
+</html>
+

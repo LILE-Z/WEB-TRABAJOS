@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/calculadora.css"> 
+</head>
+<body>
+ <div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-4">
+            <h2 class="text-center mb-4">Calculadora</h2>
+            <div id="calc-container" class="mb-3 p-2 border rounded">
+                <input type="text" id="calc-display" class="form-control mb-2" disabled>
+                <div class="calc-sign"></div>
+            </div>
+            <div class="row">
+                <button class="col btn btn-secondary number">7</button>
+                <button class="col btn btn-secondary number">8</button>
+                <button class="col btn btn-secondary number">9</button>
+                <button class="col btn btn-info operator">/</button>
+            </div>
+            <div class="row">
+                <button class="col btn btn-secondary number">4</button>
+                <button class="col btn btn-secondary number">5</button>
+                <button class="col btn btn-secondary number">6</button>
+                <button class="col btn btn-info operator">x</button>
+            </div>
+            <div class="row">
+                <button class="col btn btn-secondary number">1</button>
+                <button class="col btn btn-secondary number">2</button>
+                <button class="col btn btn-secondary number">3</button>
+                <button class="col btn btn-info operator">-</button>
+            </div>
+            <div class="row">
+                <button class="col btn btn-secondary number">0</button>
+                <button class="col btn btn-secondary number">.</button>
+                <button class="col btn btn-secondary equal">=</button>
+                <button class="col btn btn-info operator">+</button>
+            </div>
+            <div class="row">
+                <button class="col-12 btn btn-danger clear">BORRAR</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="JS/calculadora.js"></script> 
+</body>
+</html>
+

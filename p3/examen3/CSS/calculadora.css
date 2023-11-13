@@ -1,0 +1,46 @@
+body {
+    background-color: #282828; /* bg de gruvbox */
+    color: #ebdbb2; /* fg de gruvbox */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#calc-container {
+    position: relative;
+}
+
+.calc-display {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #ebdbb2; /* fg de gruvbox */
+    background-color: #3c3836; /* dark gray de gruvbox */
+    border: none;
+}
+
+.calc-sign {
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    width: 20px;
+    height: 20px;
+    background-color: #a89984; /* light gray de gruvbox */
+}
+
+.btn {
+    margin: 5px;
+    color: #ebdbb2; /* fg de gruvbox */
+}
+
+.btn-secondary {
+    background-color: #504945; /* gray de gruvbox */
+}
+
+.btn-info {
+    background-color: #076678; /* blue de gruvbox */
+}
+
+.btn-danger {
+    background-color: #cc241d; /* red de gruvbox */
+}
+
