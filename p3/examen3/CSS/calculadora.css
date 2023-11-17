@@ -1,6 +1,6 @@
 body {
-    background-color: #282828; /* bg de gruvbox */
-    color: #ebdbb2; /* fg de gruvbox */
+    background-color: #282828; 
+    color: #ebdbb2;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -13,8 +13,8 @@ body {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
-    color: #ebdbb2; /* fg de gruvbox */
-    background-color: #3c3836; /* dark gray de gruvbox */
+    color: #ebdbb2;
+    background-color: #3c3836; 
     border: none;
 }
 
@@ -24,23 +24,25 @@ body {
     top: 11px;
     width: 20px;
     height: 20px;
-    background-color: #a89984; /* light gray de gruvbox */
+    background-color: #a89984; 
+    padding: 1px;
+    color: #504945;
 }
 
 .btn {
     margin: 5px;
-    color: #ebdbb2; /* fg de gruvbox */
+    color: #ebdbb2;
 }
 
 .btn-secondary {
-    background-color: #504945; /* gray de gruvbox */
+    background-color: #504945; 
 }
 
 .btn-info {
-    background-color: #076678; /* blue de gruvbox */
+    background-color: #076678; 
 }
 
 .btn-danger {
-    background-color: #cc241d; /* red de gruvbox */
+    background-color: #cc241d;
 }
 

@@ -5,6 +5,11 @@ var signoOperacion = ''; // Guarda el signo de la operación
 var esperandoSegundoNumero = false; // Indica si estamos esperando el segundo número
 //EN cada iteracion se va agregando un numero nevo que se ira agregando al verdadero numero
 function ingresarNumero(numero) {
+  // Si es el comienzo de la entrada y el primer número es '0', no haga nada y regrese
+  if (!segundoNumero && numero === '0') {
+    return;
+  }
+
   // Verifica si el número a añadir es un punto decimal
   if (numero === '.') {
     // Si ya hay un punto decimal, no permitir añadir otro
@@ -12,7 +17,7 @@ function ingresarNumero(numero) {
       return;
     }
     // Si no hay números aún, añade un '0' antes del punto
-    if (segundoNumero === '') {
+    if (!segundoNumero) {
       segundoNumero = '0.';
       actualizarDisplay(segundoNumero);
       return;
@@ -25,15 +30,11 @@ function ingresarNumero(numero) {
     esperandoSegundoNumero = false;
   } else {
     // Añade el nuevo número al existente (o reemplaza si es '0')
-    if (segundoNumero === '0' && numero !== '.') {
-      segundoNumero = numero; //En caso de tener un 0 y agregar un numero despues entonces aparecera el numero que no es cero.
-    } else {
-      segundoNumero += numero; //numero actual
-    }
+    segundoNumero += numero;
   }
+
   actualizarDisplay(segundoNumero);
 }
-
 
 function ingresarOperador(operador) {
   if (!esperandoSegundoNumero) {
