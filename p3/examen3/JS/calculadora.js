@@ -110,12 +110,12 @@ var botonesOperador = document.getElementsByClassName('operator');
 for (var i = 0; i < botonesOperador.length; i++) {
   botonesOperador[i].addEventListener('click', function(e) { ingresarOperador(e.target.innerText); });
 }
-var botonIgual = document.getElementsByClassName('equal')[0]; // Asume que tienes un botón con clase "equal"
+var botonIgual = document.getElementsByClassName('equal')[0];
 if (botonIgual) {
   botonIgual.addEventListener('click', calcular);
 }
 
-var botonLimpiar = document.getElementsByClassName('clear')[0]; // Asume que tienes un botón con clase "clear"
+var botonLimpiar = document.getElementsByClassName('clear')[0];
 if (botonLimpiar) {
   botonLimpiar.addEventListener('click', limpiarCalculadora);
 }
